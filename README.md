@@ -633,6 +633,8 @@ export function Article() {
 
 ## 6. Reduxでグローバルな状態を共有する
 
+![chap6の目標](./art/06.png)
+
 * [redux](https://redux.js.org/), [react-redux](https://react-redux.js.org/), [redux-toolkit](https://redux-toolkit.js.org/)をインストール済み
 * `@material-ui/icons` をインストール済み
 
@@ -917,6 +919,8 @@ export function ArticleList() {
 * さらに実践的なチュートリアルは[Redux ToolkitのTutorial](https://redux-toolkit.js.org/tutorials/basic-tutorial)をやってみるとよい
 
 ## 7. 通信結果をReduxに取り込む
+
+![chap7の目標](./art/07.png)
 
 * 現実世界のいいねボタンは通信を伴うはずなので通信してみます
 * APIクライアントでいいね数の取得・更新ができるようになりました
