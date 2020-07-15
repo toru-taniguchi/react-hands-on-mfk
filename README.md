@@ -1,7 +1,7 @@
 Reactハンズオン
 ==========
 
-簡単なブログを作ってみよう
+簡単なブログ風Webサイトを作ってみよう
 
 * 関数コンポーネント + React Hooksを前提とします
 * Nkznの趣味で[Material UI](https://material-ui.com/)を使っていますが他のUIライブラリでも構いません
