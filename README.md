@@ -9,8 +9,8 @@ Reactハンズオン
 ## 0. 環境構築
 
 * Node.js 10, 12, 14のどれかが入っていること（やりたい人はyarnでもいいです）
-* ESLintプラグインをインストールする
-* Prettierプラグインをインストールする
+* [ESLintプラグイン](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)をインストールする
+* [Prettierプラグイン](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)をインストールする
 * `npx create-react-app react-hands-on`
 * `npm install prettier eslint@6.6.0 --save-dev`
 * `"prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""` をnpm scriptsに追記
