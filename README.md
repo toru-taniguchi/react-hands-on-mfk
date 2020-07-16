@@ -530,6 +530,7 @@ export function useArticle(id) {
 ## 5. URLと画面切り替えを同期する
 
 * [react-router-dom](https://reactrouter.com/web/guides/quick-start)をインストール済み
+    - `npm install react-router-dom`
 
 ### Try
 
@@ -636,7 +637,9 @@ export function Article() {
 ![chap6の目標](./art/06.png)
 
 * [redux](https://redux.js.org/), [react-redux](https://react-redux.js.org/), [redux-toolkit](https://redux-toolkit.js.org/)をインストール済み
+    - `npm install redux react-redux @reduxjs/toolkit`
 * `@material-ui/icons` をインストール済み
+    - `npm install @material-ui/icons`
 
 ### Try
 
