@@ -1179,3 +1179,5 @@ const incrementGoodCount = useCallback(
 
 * Jestで簡単な自動テスト
 * Storybook向けのリファクタリング
+    - https://speakerdeck.com/nkzn/hooksshi-dai-falseshe-ji-falsehua-number-agrinoteinside の最後のほうに書いてある
+
