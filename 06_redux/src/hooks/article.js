@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchArticle, fetchArticles } from "../data/apiclient";
+import { useGoodForArticle } from "./goodcount";
 
 export function useArticle(id) {
   const [article, setArticle] = useState();
@@ -18,12 +19,14 @@ export function useArticle(id) {
 
 export function useArticles() {
   const [articles, setArticles] = useState();
+  const { setGoodCount } = useGoodForArticle();
 
   useEffect(() => {
     fetchArticles().then((_articles) => {
       setArticles(_articles);
+      setGoodCount(_articles);
     });
-  }, []);
+  }, [setGoodCount]);
 
   return {
     articles,

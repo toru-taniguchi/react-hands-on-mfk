@@ -71,6 +71,9 @@ React は HTML ページにすぐに追加することができます。その�
 
 export async function fetchArticle(id) {
   await sleep(2000); // 通信待ちのダミー処理
+  if (!id) {
+    return articles[0];
+  }
   return articles.find((article) => article.id === id);
 }
 

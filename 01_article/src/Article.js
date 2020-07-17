@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-import { useArticle } from "./hooks/article";
-import { useParams } from "react-router-dom";
+import { fetchArticle } from "./data/apiclient";
 
 export function Article() {
-  const { articleId } = useParams();
-  const { article } = useArticle(parseInt(articleId));
+  const [article, setArticle] = useState();
+
+  useEffect(() => {
+    fetchArticle().then((_article) => {
+      setArticle(_article);
+    });
+  }, []);
 
   if (!article) {
     return <div>loading...</div>;

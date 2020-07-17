@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import { ArticleList } from "./ArticleList";
 import { Article } from "./Article";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -12,7 +14,12 @@ function App() {
           <Typography variant="h6">ブログ</Typography>
         </Toolbar>
       </AppBar>
-      <Article />
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <ArticleList />
+        <Switch>
+          <Route component={Article} path="/article/:articleId" />
+        </Switch>
+      </div>
     </div>
   );
 }
